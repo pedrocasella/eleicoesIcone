@@ -36,6 +36,70 @@ header .logo{
     margin-left: 1rem;
 }
 
+/* Eleito Área */
+
+.eleito-area{
+    margin-top: 2rem;
+}
+
+.prefeito-eleito-ul{
+    display: inline-flex;
+    list-style: none;
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.prefeito-eleito-ul .descricao-prefeito-eleito{
+    width: 165px;
+    font-size: 9pt;
+    margin-right: .5rem;
+}
+
+.prefeito-eleito-ul .foto-prefeito-eleito{
+    width: 60px;
+    height: 60px;
+    background-color: #323232;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: .5rem;
+}
+
+.prefeito-eleito-ul .nome-prefeito-eleito{
+    font-weight: bolder;
+}
+
+.prefeito-eleito-ul .nome-prefeito-eleito span{
+    font-weight: lighter;
+    font-size: 9pt;
+}
+
+.prefeito-eleito-ul .partido-prefeito-eleito{
+    color: #323232;
+}
+
+.prefeito-eleito-ul .resultado-box{
+    font-size: 8pt;
+    font-weight: bolder;
+    color: #fff;
+    width: fit-content;
+    padding: .3rem;
+    background-color: #ff6126;
+    border-radius: 4px;
+}
+
+.prefeito-eleito-ul .votos-prefeito-eleito{
+    color: #6c6c6c;
+}
+
+/*------------*/
+
+.grafico-prefeito-area-section{
+    padding: 2rem;
+}
+
+
 .candidatos-lista-area h4{
     margin-top: 3rem;
     margin-left: 2rem;
@@ -53,7 +117,7 @@ header .logo{
 }
 
 .candidatos-lista-area .canditato-ul .descricao-candidato{
-    width: 200px;
+    width: 180px;
 }
 
 .candidatos-lista-area .foto-candidato{
