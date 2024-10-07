@@ -66,24 +66,33 @@ document.getElementById('candidatos-lista-area').addEventListener('click', (e)=>
     const uuid = e.target.dataset.votarUuid
   
     if(uuid != undefined){
-        const candidatoRef = ref(db, 'candidatos/' + uuid);
-        get(candidatoRef).then((snapshot)=>{
+        const configRef = ref(db, 'config/liberarResultado');
+        get(configRef).then((snapshot)=>{
             const data = snapshot.val()
-            if(data.pontos){
-                const pontos = data.pontos
-                update(candidatoRef, {
-                    pontos: pontos + 1
-                }).then(()=>{
-                    alert('Votação Registrada com Sucesso!')
-                })
+            if(data == true){
+                alert('Votação Encerrada!')
             }else{
-                update(candidatoRef, {
-                    pontos: 1
-                }).then(()=>{
-                    alert('Votação Registrada com Sucesso!')
+                const candidatoRef = ref(db, 'candidatos/' + uuid);
+                get(candidatoRef).then((snapshot)=>{
+                    const data = snapshot.val()
+                    if(data.pontos){
+                        const pontos = data.pontos
+                        update(candidatoRef, {
+                            pontos: pontos + 1
+                        }).then(()=>{
+                            alert('Votação Registrada com Sucesso!')
+                        })
+                    }else{
+                        update(candidatoRef, {
+                            pontos: 1
+                        }).then(()=>{
+                            alert('Votação Registrada com Sucesso!')
+                        })
+                    }
                 })
             }
         })
+
     }
   })
 
