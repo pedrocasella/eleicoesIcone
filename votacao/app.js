@@ -86,3 +86,8 @@ document.getElementById('candidatos-lista-area').addEventListener('click', (e)=>
         })
     }
   })
+
+  //Ver Resultados
+  document.getElementById('ver-resultados-btn').addEventListener('click', ()=>{
+    window.location.assign('./../')
+  })

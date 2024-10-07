@@ -36,6 +36,18 @@ header .logo{
     margin-left: 2rem;
 }
 
+.ver-resultados-btn{
+    width: fit-content;
+    padding: 1rem;
+    background-color: #ff6126;
+    font-weight: bolder;
+    color: #fff;
+    border-radius: 30px;
+    margin: 2rem 0rem 0rem 2rem;
+    user-select: none;
+    cursor: pointer;
+}
+
 .candidatos-lista-area h4{
     margin-top: 4rem;
     margin-left: 2rem;
@@ -53,7 +65,8 @@ header .logo{
 }
 
 .candidatos-lista-area .canditato-ul .descricao-candidato{
-    width: 155px;
+    width: 123px;
+    font-size: 10pt;
 }
 
 .candidatos-lista-area .foto-candidato{
