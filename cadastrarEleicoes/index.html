@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Cadastro das Eleições </title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li>
+                <div class="logo"></div>
+            </li>
+            <li>
+                <h3>Cadastro Eleitoral <br> 2024</h3>
+            </li>
+        </ul>
+        
+    </header>
+    <ul class="cadastro-sections-ul">
+        <li>
+            <section class="cadastro-candidato-section">
+                <h2>Cadastrar Candidato</h2>
+                <center>
+                    <label for="foto-candidato-input"><div class="foto-candidato" id="foto-candidato"></div></label>
+                    <input type="file" id="foto-candidato-input" style="display: none;">
+                    <input type="text" placeholder="Nome Completo" id="nome-completo-input"><br>
+                    <input type="text" placeholder="Nome de Urna" id="nome-de-urna-input"><br>
+                    <select id="partido-input">
+                        <option value="null">--Escolha um Partido--</option>
+                    </select><br>
+                    <select name="" id="cargo-input">
+                        <option value="Prefeito">Prefeito</option>
+                        <option value="Vereador">Vereador</option>
+                    </select>
+                    <div class="cadastrar-candidato-btn" id="cadastrar-candidato-btn">Cadastrar Candidato</div>
+                </center>
+            </section>
+        </li>
+        <li>
+            <section class="cadastro-partido-section">
+                <h2>Cadastrar Partido</h2>
+                <input type="text" placeholder="Nome do Partido" id="nome-partido-input"><br>
+                <input type="text" placeholder="Sigla do Partido" id="sigla-partido-input"><br>
+                <textarea name="" placeholder="Ideais do Partido" id="ideais-partido"></textarea>
+                <div class="cadastrar-partido-btn" id="cadastrar-partido-btn">Cadastrar Partido</div>
+            </section>
+        </li>
+    </ul>
+
+
+    <script src="./app.js" type="module"></script>
+</body>
+</html>

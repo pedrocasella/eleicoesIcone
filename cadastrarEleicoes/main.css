@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 100%;
+    height: fit-content;
+    border-bottom: solid #32323226 1px;
+    background-color: #ff6126;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.08);
+}
+
+header ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+
+header ul h3{
+    margin-top: .8rem;
+    font-size: 18pt;
+    margin-left: 1rem;
+}
+
+header .logo{
+    width: 80px;
+    height: 80px;
+    background-image: url(./../img/whiteIcon.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 2rem;
+}
+
+.cadastro-sections-ul{
+    display: inline-flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+
+/* Cadastro de Candidato */
+
+.cadastro-candidato-section h2{
+    font-size: 14pt;
+    margin-bottom: 1rem;
+}
+
+.cadastro-candidato-section label{
+    display: block;
+    width: fit-content;
+}
+
+.cadastro-candidato-section .foto-candidato{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #323232;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 1rem;
+}
+
+.cadastro-candidato-section{
+    margin: 2rem;
+    padding: 2rem;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 8px;
+    border: solid #32323253 1px;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.08); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.08);
+}
+
+.cadastro-candidato-section input{
+    width: 200px;
+    border-radius: 30px;
+    padding: .5rem 1rem .5rem 1rem;
+    border: solid #32323242 1px;
+    margin-top: .5rem;
+}
+
+.cadastro-candidato-section select{
+    width: 200px;
+    border-radius: 30px;
+    padding: .5rem 1rem .5rem 1rem;
+    border: solid #32323242 1px;
+    margin-top: .5rem;
+}
+
+.cadastro-candidato-section .cadastrar-candidato-btn{
+    width: fit-content;
+    font-weight: bolder;
+    color: #fff;
+    border-radius: 30px;
+    background-color: #ff6126;
+    user-select: none;
+    cursor: pointer;
+    margin-top: 1rem;
+    padding: .8rem;
+}
+
+/*--------------------------------*/
+
+.cadastro-partido-section{
+    margin: 2rem;
+    padding: 2rem;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 8px;
+    border: solid #32323253 1px;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.08); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.08);
+}
+
+.cadastro-partido-section input{
+    width: 200px;
+    border-radius: 30px;
+    padding: .5rem 1rem .5rem 1rem;
+    border: solid #32323242 1px;
+    margin-top: .5rem;
+}
+
+.cadastro-partido-section textarea{
+    width: 200px;
+    height: 100px;
+    border-radius: 14px;
+    padding: .5rem 1rem .5rem 1rem;
+    border: solid #32323242 1px;
+    margin-top: .5rem;
+}
+
+.cadastro-partido-section .cadastrar-partido-btn{
+    width: fit-content;
+    font-weight: bolder;
+    color: #fff;
+    border-radius: 30px;
+    background-color: #ff6126;
+    user-select: none;
+    cursor: pointer;
+    margin-top: .5rem;
+    padding: .8rem;
+}
+
+.cadastro-partido-section h2{
+    font-size: 14pt;
+    margin-bottom: 1rem;
+}

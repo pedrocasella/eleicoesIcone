@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 100%;
+    height: fit-content;
+    border-bottom: solid #32323226 1px;
+    background-color: #ff6126;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.08);
+}
+
+header ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+
+header ul h3{
+    margin-top: .8rem;
+    font-size: 18pt;
+    margin-left: 1rem;
+}
+
+header .logo{
+    width: 75px;
+    height: 75px;
+    background-image: url(./../img/whiteIcon.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 2rem;
+}
+
+.candidatos-lista-area h4{
+    margin-top: 4rem;
+    margin-left: 2rem;
+    font-size: 14pt;
+}
+
+.candidatos-lista-area .canditato-ul{
+    display: inline-flex;
+    list-style: none;
+    padding: 2rem 2rem 0rem 2rem;
+}
+
+.candidatos-lista-area .canditato-ul li{
+    margin-right: .8rem;
+}
+
+.candidatos-lista-area .canditato-ul .descricao-candidato{
+    width: 155px;
+}
+
+.candidatos-lista-area .foto-candidato{
+    width: 60px;
+    height: 60px;
+    background-color: #323232;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.candidatos-lista-area .cargo-candidato{
+    font-size: 10pt;
+    color: #6a6a6a;
+}
+
+
+.candidatos-lista-area .nome-candidato{
+    font-weight: bolder;
+    color: #323232;
+}
+
+.candidatos-lista-area .partido-candidato{
+    color: #535353;
+}
+
+.candidatos-lista-area .votar-btn{
+    font-size: 10pt;
+    font-weight: bolder;
+    border-radius: 4px;
+    background-color: #ff6126;
+    user-select: none;
+    color: #fff;
+    padding: .5rem;
+    cursor: pointer;
+    margin-left: 1rem;
+}
